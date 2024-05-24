@@ -55,6 +55,7 @@
     }
 
     .who-am-i-card-1, .who-am-i-card-2, .who-am-i-card-3 {
+        width: 80%;
         max-width: 80%; /* Adjust max-width for medium screens */
     }
 }

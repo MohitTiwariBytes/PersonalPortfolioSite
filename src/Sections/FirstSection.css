@@ -51,3 +51,10 @@
 .downArrow{
     margin-top: -50px;
 }
+
+@media (max-width:754px){
+    .first-section-text{
+        width: 90%;
+        font-size: 100%;
+    }
+}
