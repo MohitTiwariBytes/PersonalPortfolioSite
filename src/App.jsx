@@ -1,6 +1,6 @@
 import HomePage from "./Pages/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import SecondSection from "./Sections/SecondSection";
+import SecondSection from "./HomeSections/SecondSection";
 import "./App.css";
 
 function App() {

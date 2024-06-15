@@ -5,7 +5,7 @@ import Marquee from "../Components/Marquee.jsx";
 const SecondSection = () => {
   return (
     <div className="second-section-main">
-      <h1 id="aboutMeTitle">About Me</h1>
+      <h1 id="aboutMeTitle">Who Am I?</h1>
       <div className="about-parent">
         <div className="who-am-i-card-1 rdsharma">
           <h1>Who am I?</h1>

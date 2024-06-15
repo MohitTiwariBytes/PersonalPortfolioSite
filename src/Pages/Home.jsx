@@ -1,8 +1,8 @@
 import React from "react";
 import "./home.css"
 import Navbar from "../Components/Navbar"
-import FirstSection from "../Sections/FirstSection"
-import SecondSection from "../Sections/SecondSection";
+import FirstSection from "../HomeSections/FirstSection"
+import SecondSection from "../HomeSections/SecondSection";
 
 const HomePage = () => {
     
