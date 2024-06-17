@@ -1,6 +1,8 @@
 import React from "react";
 import "./SecondSection.css";
 import Marquee from "../Components/Marquee.jsx";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
 const SecondSection = () => {
   return (

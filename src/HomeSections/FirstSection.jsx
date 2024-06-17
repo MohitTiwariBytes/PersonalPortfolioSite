@@ -1,27 +1,76 @@
-import React from "react";
-import {motion} from "framer-motion"
-import "./FirstSection.css"
-import WavingHand from "../assets/512.gif"
-import MyImage from "../assets/MyNewImage.jpg"
-import downArrow from "../assets/downarrow.png"
+import React, { useEffect } from "react";
+import { gsap } from "gsap";
+import SplitType from "split-type";
+import { motion } from "framer-motion";
+import "./FirstSection.css";
+import WavingHand from "../assets/512.gif";
+import MyImage from "../assets/MyNewImage.jpg";
+import downArrow from "../assets/downarrow.png";
 
+const FirstSection = () => {
+  useEffect(() => {
+    // Initialize SplitType
+    // GSAP animation
+    gsap.fromTo(
+      ".text-main h1",
+      {
+        y: "1700px",
+      },
+      {
+        y: "0px",
+        duration: 1.1,
+        ease: "power4.out",
+        stagger: 0.1,
+      }
+    );
 
-const FirstSection = () =>{
-    return(
-        <div className="first-section-main">
-            <div className="first-section-image">
-                <img src={MyImage} alt="" />
-            </div>
-            <div className="first-section-text">
-                <h1>Hi, <img src={WavingHand} alt="" />  I am <z>Mohit Tiwari!</z> A 13 year old front-end developer from India.</h1>
-            </div>
+    gsap.fromTo(
+      ".frontend p",
+      {
+        y: "1700px",
+      },
+      {
+        y: "0px",
+        duration: 1.1,
+        ease: "power4.out",
+        stagger: 0.1,
+      }
+    );
 
-            <div className="downArrow">
-                <img src={downArrow} alt="" />
-            </div>
+    gsap.fromTo(
+      ".location p",
+      {
+        y: "1700px",
+      },
+      {
+        y: "0px",
+        duration: 1.1,
+        ease: "power4.out",
+        stagger: 0.1,
+      }
+    );
+  }, []);
 
+  return (
+    <div className="first-section-main">
+      <div className="first-section">
+        <div className="front-text">
+          <div className="text-main">
+            <h1>MohitTiwariDev</h1>
+          </div>
         </div>
-    )
-}
 
-export default FirstSection
+        <div className="bottom">
+          <div className="frontend">
+            <p>13 yo front-end dev</p>
+          </div>
+          <div className="location">
+            <p>India, Uttar-Pradesh</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default FirstSection;
