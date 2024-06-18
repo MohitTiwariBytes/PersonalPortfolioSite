@@ -161,6 +161,9 @@ a {
 
 @media (max-width: 841px) {
   .third-section-main {
-    margin-top: 300px;
+    margin-top: 400px;
+  }
+  .projectImg {
+    margin-left: 0;
   }
 }
