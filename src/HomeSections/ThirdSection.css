@@ -166,4 +166,8 @@ a {
   .projectImg {
     margin-left: 0;
   }
+
+  .projectImg img {
+    margin-left: 0;
+  }
 }
