@@ -49,6 +49,7 @@ body {
   white-space: nowrap;
   animation: typewriter 2s steps(44) 1s 1 normal both,
     blinkTextCursor 500ms infinite;
+  cursor: pointer;
 }
 
 @keyframes typewriter {
@@ -63,7 +64,7 @@ body {
 
 @keyframes blinkTextCursor {
   from {
-    border-right-color: hsl(0, 0%, 80%);
+    border-right-color: hsl(0, 0%, 0%);
   }
 
   to {

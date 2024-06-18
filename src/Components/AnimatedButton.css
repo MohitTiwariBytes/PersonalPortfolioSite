@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.animated-button {
+  padding: 19px;
+  background: black;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: large;
+  width: 150px;
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.animated-button:hover {
+  scale: 1.1;
+}
+
+.animated-button i {
+  transform: rotate(-50deg);
+  transition: all 0.3s ease;
+}
+
+.animated-button-container {
+  width: 200px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .animated-button {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+}
