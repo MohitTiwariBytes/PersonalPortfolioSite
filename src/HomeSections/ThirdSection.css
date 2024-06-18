@@ -1,0 +1,166 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.third-section {
+  height: 150vh;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.third-section-main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.topText {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.topText h1 {
+  margin-left: 30px;
+  font-size: 70px;
+  text-decoration: underline;
+}
+
+.project1 {
+  margin-top: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.projectImg img {
+  margin-left: 30px;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+.aboutProject {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.buttons {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  gap: 20px;
+}
+
+#projectDescription {
+  width: 80%;
+}
+
+.project2 {
+  margin-top: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.projectImg img {
+  margin-left: 30px;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+.aboutProject {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.buttons {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  gap: 20px;
+}
+
+#projectDescription {
+  width: 80%;
+}
+
+@media (max-width: 834px) {
+  .third-section-main {
+    display: flex;
+    justify-content: center;
+  }
+
+  .project1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .aboutProject {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+  }
+
+  #projectDescription {
+    width: 80%;
+    text-align: center;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+  }
+
+  .project2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 841px) {
+  .third-section-main {
+    margin-top: 300px;
+  }
+}

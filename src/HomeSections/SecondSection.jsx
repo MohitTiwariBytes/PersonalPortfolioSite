@@ -16,7 +16,12 @@ const SecondSection = () => {
             </h1>
 
             <div className="button">
-              <AnimatedButton />
+              <AnimatedButton
+                text={"About Me"}
+                onClick={function () {
+                  window.location.href = "/about";
+                }}
+              />
             </div>
           </div>
 

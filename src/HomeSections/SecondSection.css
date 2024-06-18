@@ -15,6 +15,7 @@ body,
 .second-section-main {
   height: 100vh;
   width: 100%;
+  border-bottom: 1px solid black;
 }
 
 .main-second-section {
@@ -58,6 +59,10 @@ body,
     display: none;
   }
 
+  .second-section-main {
+    height: 100vh;
+  }
+
   .imageAndButton {
     width: 100%;
     display: flex;
@@ -71,6 +76,11 @@ body,
   .first h1 {
     text-align: center;
     margin-left: 0px;
+    margin-top: 0;
+  }
+
+  .first {
+    margin-top: 0px;
   }
 
   .button {

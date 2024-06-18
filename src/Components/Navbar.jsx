@@ -78,7 +78,13 @@ const Navbar = () => {
             style={{ display: hamOpen ? "none" : "block" }}
             className="header"
           >
-            <h1>MohitTiwariDev</h1>
+            <h1
+              onClick={function () {
+                window.location.href = "/";
+              }}
+            >
+              MohitTiwariDev
+            </h1>
           </motion.div>
         </div>
       </div>
