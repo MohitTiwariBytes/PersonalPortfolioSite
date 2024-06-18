@@ -1,11 +1,6 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
-import SplitType from "split-type";
-import { motion } from "framer-motion";
 import "./FirstSection.css";
-import WavingHand from "../assets/512.gif";
-import MyImage from "../assets/MyNewImage.jpg";
-import downArrow from "../assets/downarrow.png";
 
 const FirstSection = () => {
   useEffect(() => {

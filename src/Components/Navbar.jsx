@@ -95,14 +95,20 @@ const Navbar = () => {
         </div>
 
         <div className="divider"></div>
-        <motion.div className="ham-items" initial="hidden" animate={hamOpen ? "visible" : "hidden"} variants={{
-          visible: {
-            transition: {
-              staggerChildren: 0.3,
+        <motion.div
+          className="ham-items"
+          initial="hidden"
+          animate={hamOpen ? "visible" : "hidden"}
+          variants={{
+            visible: {
+              transition: {
+                staggerChildren: 0.3,
+              },
             },
-          },
-        }}>
-          {["Home", "About", "Projects", "Contact"].map((item, i) => (
+          }}
+        >
+          <motion.a href="/">Home</motion.a>
+          {["About", "Projects", "Contact"].map((item, i) => (
             <motion.a
               key={item}
               initial="hidden"
