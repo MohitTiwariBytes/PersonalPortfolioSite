@@ -8,23 +8,23 @@ body,
 .fourth-section {
   height: 100%;
   width: 100%;
-  margin-top: 30px;
   border-bottom: 1px solid black;
+  padding: 44px;
 }
 
 .fourth-section-main {
   height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
 }
 
 .topText {
   width: 100%;
-  height: 100px;
   display: flex;
   justify-content: start;
-  margin-top: 100px;
 }
 
 .topText h1 {

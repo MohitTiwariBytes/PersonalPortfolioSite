@@ -3,6 +3,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SecondSection from "./HomeSections/SecondSection";
 import Navbar from "./Components/Navbar";
 import "./App.css";
+import {gsap, TweenLite} from "gsap";
+
+
 
 function App() {
   return (
