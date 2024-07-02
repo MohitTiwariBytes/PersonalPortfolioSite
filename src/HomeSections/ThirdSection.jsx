@@ -9,7 +9,7 @@ const ThirdSection = () => {
   return (
     <div className="third-section">
       <div className="third-section-main">
-        <div className="topText">
+        <div className="topText1">
           <h1>Projects.</h1>
         </div>
 

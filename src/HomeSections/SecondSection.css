@@ -13,9 +13,12 @@ body,
 }
 
 .second-section-main {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+  padding: 44px;
 }
 
 .main-second-section {
@@ -60,7 +63,7 @@ body,
   }
 
   .second-section-main {
-    height: 100vh;
+    height: 100%;
   }
 
   .imageAndButton {
@@ -70,7 +73,7 @@ body,
     justify-content: center;
     align-items: center;
     gap: 30px;
-    margin-top: 150px;
+    margin-top: 0;
   }
 
   .first h1 {
