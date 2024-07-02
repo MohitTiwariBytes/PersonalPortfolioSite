@@ -29,10 +29,12 @@ const ThirdSection = () => {
               <AnimatedButton
                 width={"200px"}
                 text={"View Project"}
+                onClick={() => { window.location.replace("https://food-zy.netlify.app") }}
               ></AnimatedButton>
               <AnimatedButton
                 width={"200px"}
                 text={"Github Repo"}
+                onClick={() => { window.location.replace("https://github.com/MohitTiwariBytes/Foodzy") }}
               ></AnimatedButton>
             </div>
           </div>
@@ -53,10 +55,12 @@ const ThirdSection = () => {
               <AnimatedButton
                 width={"200px"}
                 text={"View Project"}
+                onClick={() => { window.location.replace("https://teencodehub.netlify.app") }}
               ></AnimatedButton>
               <AnimatedButton
                 width={"200px"}
                 text={"Github Repo"}
+                onClick={() => { window.location.replace("https://github.com/MohitTiwariBytes/TeenCodeHub") }}
               ></AnimatedButton>
             </div>
           </div>

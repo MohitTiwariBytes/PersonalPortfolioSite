@@ -62,6 +62,7 @@ const Navbar = () => {
           <motion.div
             animate={{ rotate: hamOpen ? 47 : 0 }}
             className="line1"
+            ref={hamRef}
           ></motion.div>
           <motion.div
             animate={{
@@ -69,6 +70,7 @@ const Navbar = () => {
               rotate: hamOpen ? -47 : 0,
             }}
             className="line2"
+            ref={hamRef}
           ></motion.div>
         </motion.div>
       </div>
