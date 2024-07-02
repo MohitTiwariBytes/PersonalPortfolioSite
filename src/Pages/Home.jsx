@@ -11,16 +11,17 @@ import SmoothScroll from '../Components/SmoothScroll';
 
 const HomePage = () => {
   return (
+    
+    <div className="home-page-main">
+    <Navbar></Navbar>
     <SmoothScroll>
-      <div className="home-page-main">
-        <Navbar />
         <FirstSection id="first-section" />
         <SecondSection id="second-section" />
         <ThirdSection id="third-section" />
         <FourthSection id="fourth-section" />
         <ContactForm id="contact-form" />
-      </div>
     </SmoothScroll>
+    </div>
   );
 };
 
