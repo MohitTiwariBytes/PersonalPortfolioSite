@@ -14,7 +14,7 @@ const FourthSection = () => {
                         <img src={award1Img} alt="" />
                     </div>
                     <div className="aboutAward">
-                        <h1>Edvolution</h1>
+                        <h1>EdVolution</h1>
                         <h2>1st place</h2>
                         <h2>Awarded with Galaxy Tab A9</h2>
                         <div className="awardDescription">

@@ -1,45 +1,46 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-html, body, #root{
+html, body, #root {
     height: 100%;
     width: 100%;
 }
 
-.main-footer{
+.main-footer {
     height: 80vh;
     width: 100%;
     background-color: #111;
+    position: relative; /* Contain children properly */
+    
 }
 
-.footer{
+.footer {
     height: 100%;
     width: 100%;
-    display:flex;
+    display: flex;
     align-items: center;
+    flex-wrap: wrap; /* Ensure children wrap correctly */
 }
 
-.left{
+.left {
     height: 100%;
     width: 50%;
-    float: left;
     background-color: #111;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.left h1{
+.left h1 {
     color: white;
     font-size: 50px;
     font-weight: 480;
-    font-size: 60px;
     margin-left: 50px;
 }
 
-.line{
+.line {
     height: 2px;
     width: 100%;
     background-color: white;
@@ -47,11 +48,11 @@ html, body, #root{
     margin-left: 50px;
 }
 
-.info{
+.info {
     margin-top: 50px;
 }
 
-#email{
+#email {
     margin-left: 50px;
     color: white;
     font-size: 20px;
@@ -59,7 +60,7 @@ html, body, #root{
     margin-top: 40px;
 }
 
-#number{
+#number {
     margin-left: 50px;
     color: white;
     font-size: 20px;
@@ -67,14 +68,13 @@ html, body, #root{
     margin-top: 40px;
 }
 
-.right{
+.right {
     height: 100%;
     width: 50%;
-    float: left;
     background-color: #111;
 }
 
-.button1{
+.button1 {
     height: 200px;
     width: 200px;
     border-radius: 50%;
@@ -85,21 +85,21 @@ html, body, #root{
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    margin-top: 120px;
+    margin-top: 60px;
     margin-right: 150px;
 }
 
-@media (max-width: 768px){
-    .button1{
+@media (max-width: 768px) {
+    .button1 {
         display: none;
     }
-    .info{
+
+    .info {
         display: flex;
         flex-direction: column;
-    
     }
 
-    .left h1{
+    .left h1 {
         width: 164%;
     }
 }

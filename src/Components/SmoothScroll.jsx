@@ -1,35 +1,51 @@
-import React, { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import React, { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const SmoothScroll = ({ children }) => {
   const scrollContainerRef = useRef(null);
+  const footerRef = useRef(null);
 
   useEffect(() => {
     const scrollContainer = scrollContainerRef.current;
+    const footer = footerRef.current;
 
     gsap.to(scrollContainer, {
-      y: () => -(scrollContainer.scrollHeight - document.documentElement.clientHeight),
-      ease: 'power1.inOut',
+      y: () =>
+        -(scrollContainer.scrollHeight - document.documentElement.clientHeight),
+      ease: "power1.inOut",
       scrollTrigger: {
         trigger: scrollContainer,
-        start: 'top top',
-        end: 'bottom bottom',
+        start: "top top",
+        end: "bottom bottom",
         scrub: 1,
-        invalidateOnRefresh: true
-      }
+        invalidateOnRefresh: true,
+      },
     });
 
+    ScrollTrigger.create({
+      trigger: footer,
+      start: "top bottom",
+      end: "bottom bottom",
+      onEnter: () =>
+        gsap.set(footer, { position: "fixed", bottom: 0, width: "100%" }),
+      onLeaveBack: () => gsap.set(footer, { position: "relative" }),
+    });
+
+    ScrollTrigger.refresh();
+
     return () => {
-      // Remove any event listeners or cleanup code if needed
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
   }, []);
 
   return (
-    <div ref={scrollContainerRef} style={{ overflow: 'hidden' }}>
-      {children}
+    <div ref={scrollContainerRef} style={{ position: "relative" }}>
+      {React.Children.map(children, (child) => {
+        return child;
+      })}
     </div>
   );
 };

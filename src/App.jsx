@@ -3,9 +3,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SecondSection from "./HomeSections/SecondSection";
 import Navbar from "./Components/Navbar";
 import "./App.css";
-import {gsap, TweenLite} from "gsap";
-
-
+import { gsap, TweenLite } from "gsap";
+import About from "./Pages/About";
 
 function App() {
   return (
@@ -16,8 +15,7 @@ function App() {
           path="/about"
           element={
             <>
-              <Navbar />
-              <SecondSection />
+              <About></About>
             </>
           }
         />

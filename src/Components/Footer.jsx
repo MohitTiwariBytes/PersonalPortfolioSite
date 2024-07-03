@@ -1,9 +1,8 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, forwardRef } from "react";
 import "./Footer.css";
 import gsap from "gsap";
 
-
-const Footer = () => {
+const Footer = forwardRef((props, ref) => {
   const hamRef = useRef(null);
   const textRef = useRef(null);
 
@@ -47,7 +46,7 @@ const Footer = () => {
     };
 
     const hamElement = hamRef.current;
-    const textElement = hamRef.current;
+    const textElement = textRef.current;
     hamElement.addEventListener("mousemove", handleMouseMove);
     hamElement.addEventListener("mouseleave", handleMouseLeave);
 
@@ -56,25 +55,24 @@ const Footer = () => {
       hamElement.removeEventListener("mouseleave", handleMouseLeave);
     };
   }, []);
+
   return (
-    <div className="main-footer">
+    <div className="main-footer" ref={ref}>
       <div className="footer">
         <div className="left">
           <h1>Wanna work with me?</h1>
           <div className="line"></div>
           <div className="info">
             <span id="number">+91 7703931038</span>
-          <span id="email">mohittiwaridev@gmail.com</span>
+            <span id="email">mohittiwaridev@gmail.com</span>
           </div>
-
         </div>
         <div ref={hamRef} className="button1">
           <span ref={textRef}>Get in touch!</span>
         </div>
-
       </div>
     </div>
   );
-};
+});
 
 export default Footer;

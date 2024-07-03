@@ -1,5 +1,6 @@
 html,
 body {
+  max-height: 100vh;
   height: 100%;
   width: 100%;
   background: #dfdede;
@@ -14,3 +15,4 @@ z {
   color: rgb(66, 66, 66);
   font-weight: 600;
 }
+
