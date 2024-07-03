@@ -69,8 +69,9 @@ const Footer = () => {
 
         </div>
         <div ref={hamRef} className="button1">
-          <span ref={textRef}>Hire Me!</span>
+          <span ref={textRef}>Get in touch!</span>
         </div>
+
       </div>
     </div>
   );
