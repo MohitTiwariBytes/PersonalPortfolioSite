@@ -22,7 +22,6 @@ body,
 }
 
 .title {
-  height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -40,6 +39,11 @@ body,
 .title h1 {
   font-size: calc(clamp(3.25em, 5vw, 8em) * 0.875);
   font-weight: 450;
+}
+
+.firstLine span,
+.secondLine span {
+  transition: all 0.3s ease;
 }
 
 .firstLine,

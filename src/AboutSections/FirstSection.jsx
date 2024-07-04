@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "./FirstSection.css";
-import { gsap, ScrollTrigger } from "gsap/all";
+import { gsap } from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 import myImg from "../assets/IMG_0565.jpeg";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -10,49 +11,55 @@ const FirstSection = () => {
   const titleRef1 = useRef(null);
   const lineRef = useRef(null);
   const iconRef = useRef(null);
-  let x = 0;
+  const textRef = useRef(null);
 
   useEffect(() => {
-    gsap.to(iconRef.current, {
-      rotation: 880,
-      scrollTrigger: {
-        trigger: iconRef.current,
-        start: "top bottom", // Animation starts when the top of the element hits the bottom of the viewport
-        end: "bottom top", // Animation ends when the bottom of the element hits the top of the viewport
-        scrub: 2, // Synchronizes the animation with the scroll position and adds a delay for smoother animation
-      },
-    });
+    const handleScroll = () => {
+      const textPosition = textRef.current.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
 
+      if (textPosition < windowHeight) {
+        textRef.current.style.color = "rgb(66, 103, 184)";
+      }
+      if (window.scrollY == 0) {
+        textRef.current.style.color = "black";
+      }
+
+      const iconPosition = iconRef.current.getBoundingClientRect().top;
+
+      if (window.scrollY == 0) {
+        iconRef.current.style.transform = `rotate(120deg)`;
+      } else {
+        iconRef.current.style.transform = `rotate(${
+          120 - window.scrollY / 3.5
+        }deg)`;
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
     gsap.fromTo(
       lineRef.current,
-      {
-        width: "-150%",
-      },
+      { width: "-150%" },
       { width: "69%", duration: 1.1, ease: "power4.out", stagger: 0.1 }
     );
+
     gsap.fromTo(
       titleRef.current,
-      {
-        y: "1700px",
-      },
-      {
-        y: "0px",
-        duration: 1.1,
-        ease: "power4.out",
-        stagger: 0.1,
-      }
+      { y: "1700px" },
+      { y: "0px", duration: 1.1, ease: "power4.out", stagger: 0.1 }
     );
+
     gsap.fromTo(
       titleRef1.current,
-      {
-        y: "1700px",
-      },
-      {
-        y: "0px",
-        duration: 1.1,
-        ease: "power4.out",
-        stagger: 0.1,
-      }
+      { y: "1700px" },
+      { y: "0px", duration: 1.1, ease: "power4.out", stagger: 0.1 }
     );
   }, []);
 
@@ -63,14 +70,18 @@ const FirstSection = () => {
           <div className="title">
             <h1>
               <div ref={titleRef} className="firstLine">
-                <span>I am just a 13 year old teenager</span>
+                <span>
+                  I am just a <span ref={textRef}>13 year old</span> teenager
+                </span>
               </div>
             </h1>
             <h1>
               <div ref={titleRef1} className="secondLine">
                 <span>interested in coding</span>
-
-                <i ref={iconRef} class="fa-solid fa-arrow-down-long fa-1x"></i>
+                <i
+                  ref={iconRef}
+                  className="fa-solid fa-arrow-down-long fa-1x"
+                ></i>
               </div>
             </h1>
           </div>

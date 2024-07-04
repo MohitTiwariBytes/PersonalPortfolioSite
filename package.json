@@ -12,6 +12,7 @@
   "dependencies": {
     "framer-motion": "^11.2.4",
     "gsap": "^3.12.5",
+    "gsap-trial": "^3.12.5",
     "nodemailer": "^6.9.14",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
