@@ -1,0 +1,182 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.third-section {
+  height: 100%;
+  width: 100%;
+}
+
+.third-section-main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  border-bottom: 1px solid black;
+  padding: 44px;
+}
+
+.topText1 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.topText1 h1 {
+  margin-left: 40px;
+  margin-top: 0px;
+  font-size: 70px;
+  text-decoration: underline;
+}
+
+.project1 {
+  margin-top: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.projectImg img {
+  margin-left: 30px;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+.aboutProject {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.buttons {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  gap: 20px;
+}
+
+#projectDescription {
+  width: 80%;
+}
+
+.project2 {
+  margin-top: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.projectImg img {
+  margin-left: 30px;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+.aboutProject {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.buttons {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  gap: 20px;
+}
+
+#projectDescription {
+  width: 80%;
+}
+
+@media (max-width: 834px) {
+  .topText1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .topText1 h1 {
+    width: 100%;
+    margin-left: 0px;
+    text-align: center;
+    margin-left: 0px;
+  }
+  .project1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .aboutProject {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+  }
+
+  #projectDescription {
+    width: 80%;
+    text-align: center;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+  }
+
+  .project2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 841px) {
+  .third-section-main {
+    margin-top: 20px;
+  }
+  .projectImg {
+    margin-left: 0;
+  }
+
+  .projectImg img {
+    margin-left: 0;
+  }
+}

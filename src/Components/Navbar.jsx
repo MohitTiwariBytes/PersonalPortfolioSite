@@ -116,7 +116,7 @@ const Navbar = () => {
           }}
         >
           <motion.a href="/">Home</motion.a>
-          {["About", "Projects", "Contact"].map((item, i) => (
+          {["About", "Projects"].map((item, i) => (
             <motion.a
               key={item}
               initial="hidden"
