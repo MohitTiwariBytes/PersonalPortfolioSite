@@ -6,6 +6,10 @@ const Footer = forwardRef((props, ref) => {
   const hamRef = useRef(null);
   const textRef = useRef(null);
 
+  function sendMessage() {
+    window.location.href = "mailto:mohittiwaridev@gmail.com";
+  }
+
   useEffect(() => {
     const handleMouseMove = (event) => {
       const rect = hamRef.current.getBoundingClientRect();
@@ -67,7 +71,7 @@ const Footer = forwardRef((props, ref) => {
             <span id="email">mohittiwaridev@gmail.com</span>
           </div>
         </div>
-        <div ref={hamRef} className="button1">
+        <div onClick={sendMessage} ref={hamRef} className="button1">
           <span ref={textRef}>Get in touch!</span>
         </div>
       </div>

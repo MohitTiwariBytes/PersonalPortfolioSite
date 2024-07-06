@@ -60,7 +60,7 @@ const FirstSection = () => {
             <p>13 yo front-end dev</p>
           </div>
           <div className="location">
-            <p>India, Uttar-Pradesh</p>
+            <p>Uttar-Pradesh, India</p>
           </div>
         </div>
       </div>

@@ -5,6 +5,7 @@ import Navbar from "./Components/Navbar";
 import "./App.css";
 import { gsap, TweenLite } from "gsap";
 import About from "./Pages/About";
+import Projects from "./Pages/Projects";
 
 function App() {
   return (
@@ -15,10 +16,12 @@ function App() {
           path="/about"
           element={
             <>
-              <About/>
+              <About />
             </>
           }
         />
+
+        <Route path="/projects" element={<Projects />} />
       </Routes>
     </BrowserRouter>
   );
