@@ -58,6 +58,9 @@ body,
 }
 
 @media (max-width: 800px) {
+  .line{
+    display: none;
+  }
   .firstImg {
     display: none;
   }
@@ -77,9 +80,10 @@ body,
   }
 
   .first h1 {
-    text-align: center;
     margin-left: 0px;
     margin-top: 0;
+    width: 100%;
+    font-size: 23px;
   }
 
   .first {

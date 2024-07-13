@@ -91,17 +91,41 @@ body,
   margin-right: 150px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1118px) {
   .button1 {
     display: none;
   }
 
-  .info {
+  .line{
+    display: none;
+  }
+
+  .info{
     display: flex;
     flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 0px;
   }
 
   .left h1 {
-    width: 164%;
+    width: 100%;
+    margin-left: 0px;
+    text-align: center;
   }
+  .left{
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  #number{
+    margin: 0px;
+  }
+  #email{
+    margin: 0px;
+  }
+  
+
 }

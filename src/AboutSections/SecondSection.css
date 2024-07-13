@@ -19,13 +19,25 @@
 }
 
 .xzy h1 {
-  width: 70%;
   font-weight: 450;
   font-size: calc(2.35rem, (7vw / 2) + 2em);
+  margin-right: 600px;
 }
 
 .xzy span {
   font-weight: 400;
   font-size: 20px;
-  width: 50%;
+  width: 600px;
+}
+
+@media (max-width: 522px){
+  .xzy h1{
+    font-size: 56px;
+    margin: 0px;
+  }
+
+  .xzy span{
+    width: 95%;
+  }
+
 }

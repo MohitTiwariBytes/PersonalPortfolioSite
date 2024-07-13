@@ -87,3 +87,12 @@ h1 {
     display: none;
   }
 }
+
+@media (max-width: 690px) {
+  .title h1{
+    font-size: 29px;
+  }
+  .title span{
+    font-size: 29px;
+  }
+}
