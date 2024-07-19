@@ -39,6 +39,7 @@ const ThirdSection = () => {
             </div>
           </div>
         </div>
+        
         <div className="project2">
           <div className="projectImg">
             <img src={teenCodeHubLogo} alt="Foodzy" />
@@ -50,6 +51,31 @@ const ThirdSection = () => {
               Created something mind blowing and want some feedback on it?
               TeenCodeHub got you! Post about your project and get feedback from
               experienced developers through comments and messages!
+            </p>
+            <div className="buttons">
+              <AnimatedButton
+                width={"200px"}
+                text={"View Project"}
+                onClick={() => { window.location.replace("https://teencodehub.netlify.app") }}
+              ></AnimatedButton>
+              <AnimatedButton
+                width={"200px"}
+                text={"Github Repo"}
+                onClick={() => { window.location.replace("https://github.com/MohitTiwariBytes/TeenCodeHub") }}
+              ></AnimatedButton>
+            </div>
+          </div>
+        </div>
+        
+        <div className="project3">
+          <div className="projectImg">
+            <img src="https://assets.hackclub.com/icon-rounded.svg" alt="Foodzy" />
+          </div>
+
+          <div className="aboutProject">
+            <h1 id="ProjectTitle">India Hackclubs Finder</h1>
+            <p id="projectDescription">
+              With this site you can list all of the Indian Hackclubs around your location! This site was buit with React, Hackclub CSS, and Open Maps API.
             </p>
             <div className="buttons">
               <AnimatedButton
