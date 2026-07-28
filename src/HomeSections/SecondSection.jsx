@@ -1,7 +1,6 @@
 import React from "react";
 import "./SecondSection.css";
 import gsap from "gsap";
-import myImage from "../assets/MyNewImage.jpg";
 import AnimatedButton from "../Components/AnimatedButton";
 
 const SecondSection = () => {
@@ -25,7 +24,7 @@ const SecondSection = () => {
             </div>
           </div>
 
-          <img src={myImage} alt="Mohit Tiwari" className="firstImg" />
+          <img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJgIuxbiwCWEhzU0IL93Vk1vVZsmcTLj5aEAqXdLrPhfdz2YIwSjepNzcP&s=10"} alt="Mohit Tiwari" className="firstImg" />
         </div>
       </div>
     </div>
